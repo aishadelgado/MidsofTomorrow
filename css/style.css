@@ -28,215 +28,260 @@ h1 {
 .primera-seccion {
     display: flex; /* Activa el diseño en filas */
     justify-content: space-between; /* Nos crea un espacio entre texto e imagen */
-    align-items: center; /* Centra verticalmente los elementos */
-    padding: 20px; /* Espaciado interno */
-    text-align: left; /* Alinea el texto a la izquierda */
+    align-items: center;
+    padding: 20px;
+    text-align: left;
 }
 
 .primera-seccion .texto {
     flex: 1; /* Ocupa el espacio disponible */
-    padding-right: 20px; /* Espaciado entre texto e imagen */
+    padding-right: 20px;
 }
 
-.primera-seccion .texto h1 {
-    font-size: 50px; /* Tamaño del texto */
-    margin: 0; /* Elimina el margen */
+.primera-seccion .texto h1 { /* Esto servirá para cambiar solamente el h1 que hay en la clase "texto" que hay en el div dentro de la sección "primera-seccion" */
+    font-size: 50px;
+    margin: 0;
 }
 
-.primera-seccion .texto p {
-    font-size: 30px; /* Tamaño del texto */
-    margin: 0; /* Elimina el margen */
+.primera-seccion .texto p { /* Esto servirá para cambiar solamente el p que hay en la clase "texto" que hay en el div dentro de la sección "primera-seccion" */
+    font-size: 30px;
+    margin: 0;
 }
 
 .primera-seccion .imagen {
-    flex: 1; /* Ocupa el espacio disponible */
-    text-align: center; /* Centra la imagen horizontalmente */
+    flex: 1;
+    text-align: center;
 }
 
 .primera-seccion .imagen img {
-    max-width: 100%; /* Asegura que la imagen no exceda el contenedor */
-    height: auto; /* Mantiene la proporción de la imagen */
+    max-width: 100%; /* Asegura que la imagen no se haga mas grande de lo que debe */
+    height: auto;
 }
 /* Las próximas comandas serán exclusivamente para la sección que tiene la clase de "segunda-seccion"*/
 .segunda-seccion {
-    background-color: rgb(116, 228, 174); /* Fondo verde */
-    color: black; /* Texto en blanco */
-    text-align: center; /* Centra el texto */
-    padding: 20px; /* Espaciado interno */
+    background-color: rgb(116, 228, 174);
+    color: black;
+    text-align: center;
+    padding: 20px;
 }
 
 .segunda-seccion h1 {
-    margin-bottom: 20px; /* Espaciado debajo del título */
-    font-size: 40px; /* Tamaño del texto del título */
+    margin-bottom: 20px; /* Esto es el espaciado debajo del título */
+    font-size: 40px;
 }
 
 .segunda-seccion .programas {
-    display: flex; /* Activa el diseño en filas */
-    justify-content: space-around; /* Espacio uniforme entre los elementos */
-    flex-wrap: wrap; /* Permite que los elementos se ajusten en varias filas si es necesario */
-    gap: 20px; /* Espaciado entre los elementos */
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    gap: 20px; /* Espaciado entre las imagenes */
 }
 
 .segunda-seccion .programa {
-    text-align: center; /* Centra el texto y la imagen dentro del contenedor */
-    flex: 1; /* Los elementos ocupan el mismo espacio */
-    max-width: 150px; /* Ancho máximo de cada programa */
+    text-align: center;
+    flex: 1; /* Esto hace que los elementos ocupen el mismo espacio */
+    max-width: 150px;
 }
 
 .segunda-seccion .programa p {
-    margin-bottom: 10px; /* Espaciado entre el texto y la imagen */
-    font-size: 18px; /* Tamaño del texto */
+    margin-bottom: 10px;
+    font-size: 18px;
 }
 
 .segunda-seccion .programa img {
-    max-width: 100%; /* Asegura que la imagen no exceda el contenedor */
-    height: auto; /* Mantiene la proporción de la imagen */
-    border-radius: 5px; /* Bordes redondeados opcionales */
+    max-width: 100%;
+    height: auto;
 }
 /* Las próximas comandas serán exclusivamente para la sección que tiene la clase de "tercera-seccion"*/
 .tercera-seccion {
-    display: flex; /* Activa el diseño en filas */
-    justify-content: space-between; /* Espacio entre la imagen y el texto */
-    align-items: center; /* Centra verticalmente los elementos */
-    padding: 20px; /* Espaciado interno */
-    text-align: left; /* Alinea el texto a la izquierda */
-    gap: 20px; /* Espaciado entre la imagen y el texto */
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+    text-align: left;
+    gap: 20px;
 }
 
 .tercera-seccion .imagen {
-    flex: 1; /* Ocupa el espacio disponible */
-    text-align: center; /* Centra la imagen horizontalmente */
+    flex: 1;
+    text-align: center;
 }
 
 .tercera-seccion .imagen img {
-    max-width: 100%; /* Asegura que la imagen no exceda el contenedor */
-    height: auto; /* Mantiene la proporción de la imagen */
-    border-radius: 5px; /* Bordes redondeados opcionales */
+    max-width: 100%;
+    height: auto;
 }
 
 .tercera-seccion .texto {
-    flex: 1; /* Ocupa el espacio disponible */
-    padding-left: 20px; /* Espaciado entre la imagen y el texto */
+    flex: 1;
+    padding-left: 20px;
 }
 
 .tercera-seccion .texto h1 {
-    font-size: 50px; /* Tamaño del texto */
-    margin-bottom: 10px; /* Espaciado debajo del título */
+    font-size: 50px;
+    margin-bottom: 10px;
 }
 
 .tercera-seccion .texto p {
-    font-size: 30px; /* Tamaño del texto */
-    line-height: 1.5; /* Mejora la legibilidad */
+    font-size: 30px;
 }
 /* Las próximas comandas serán exclusivamente para la sección que tiene la clase de "cuarta-seccion"*/
 .cuarta-seccion {
-    padding: 0; /* Elimina el espaciado interno */
-    margin: 0; /* Elimina márgenes */
-    text-align: center; /* Centra el contenido */
-    background-color: #f4f4f4; /* Fondo opcional */
+    padding: 0;
+    margin: 0;
+    text-align: center;
 }
 
 .cuarta-seccion .imagenes {
-    display: flex; /* Activa el diseño en filas */
+    display: flex;
     flex-wrap: nowrap; /* Evita que las imágenes se ajusten en varias filas */
-    gap: 0; /* Elimina el espacio entre las imágenes */
-    width: 100%; /* Asegura que el contenedor ocupe todo el ancho */
+    gap: 0;
+    width: 100%;
 }
 
 .cuarta-seccion .imagenes img {
-    width: 25%; /* Cada imagen ocupa el 25% del ancho */
-    height: auto; /* Mantiene la proporción de las imágenes */
-    margin: 0; /* Elimina márgenes */
-    padding: 0; /* Elimina padding */
-    border: none; /* Elimina bordes */
+    width: 25%;
+    height: auto;
+    margin: 0;
+    padding: 0;
+}
+/* Las próximas comandas serán exclusivamente para la sección que tiene la clase de "quinta-seccion"*/
+.quinta-seccion {
+    background-color: rgb(184, 215, 255);
+    color: black;
+    text-align: center;
+}
+
+.quinta-seccion h1 {
+    font-size: 70px;
+}
+/* Las próximas comandas serán exclusivamente para la sección que tiene la clase de "sexta-seccion"*/
+.sexta-seccion {
+    background-color: black;
+    color: white;
+    display: flex; /* Activa Flexbox */
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+    gap: 20px;
+}
+
+.sexta-seccion .izquierda {
+    flex: 1;
+    text-align: left;
+}
+
+.sexta-seccion .derecha {
+    flex: 2;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    gap: 20px;
+}
+
+.sexta-seccion .derecha .item {
+    width: calc(50% - 10px);
+    color: white;
+    text-align: center;
+    padding: 10px;
+    border-radius: 5px;
 }
 
 /* Estilos para dispositivos móviles (ancho máximo 700px) */
 @media (max-width: 700px) {
     h1 {
-        font-size: 40px; /* Reduce el tamaño del texto */
+        font-size: 40px;
     }
 
     .container {
-        background-size: cover; /* Mantén la imagen cubriendo el contenedor */
-        background-position: center; /* Centra la imagen */
-        padding: 10px; /* Agrega un poco de espacio interno */
+        background-size: cover;
+        background-position: center;
+        padding: 10px;
         text-align: center;
     }
 
     .primera-seccion {
-        padding: 15px; /* Reduce el espaciado interno */
+        padding: 15px;
     }
 
     p {
-        font-size: 16px; /* Reduce el tamaño del texto de los párrafos */
-        line-height: 1.5; /* Mejora la legibilidad */
+        font-size: 16px;
     }
 
     .primera-seccion {
         flex-direction: column; /* Cambia el diseño a columnas */
-        text-align: left; /* Centra el texto */
-        padding: 15px; /* Reduce el espaciado interno */
+        text-align: left;
+        padding: 15px;
     }
 
     .primera-seccion .texto {
-        padding-right: 0; /* Elimina el espaciado derecho */
-        margin-bottom: 20px; /* Agrega espacio debajo del texto */
+        padding-right: 0;
+        margin-bottom: 20px;
     }
 
     .primera-seccion .imagen {
-        text-align: center; /* Centra la imagen */
+        text-align: center;
     }
 
     .primera-seccion .imagen img {
-        max-width: 100%; /* Asegura que la imagen no exceda el ancho del contenedor */
-        height: auto; /* Mantiene la proporción de la imagen */
+        max-width: 100%; 
+        height: auto;
     }
 
     .segunda-seccion .programas {
-        display: flex; /* Mantén Flexbox */
+        display: flex;
         flex-wrap: wrap; /* Permite que los elementos se ajusten en varias filas */
-        justify-content: center; /* Centra los elementos */
-        gap: 20px; /* Espaciado entre los elementos */
+        justify-content: center;
+        gap: 20px;
     }
 
     .segunda-seccion .programa {
         flex: 0 1 calc(50% - 20px); /* Cada elemento ocupa el 50% del ancho menos el espacio del gap */
         max-width: calc(50% - 20px); /* Asegura que no exceda el 50% del contenedor */
-        text-align: center; /* Centra el contenido */
+        text-align: center;
     }
 
     .segunda-seccion .programa img {
-        max-width: 100%; /* Asegura que la imagen no exceda el contenedor */
-        height: auto; /* Mantiene la proporción de la imagen */
+        max-width: 100%;
+        height: auto;
     }
 
     .tercera-seccion {
-        flex-direction: column; /* Cambia el diseño a columnas */
+        flex-direction: column;
         text-align: left;
-        padding: 15px; /* Reduce el espaciado interno */
+        padding: 15px;
     }
 
     .tercera-seccion .imagen {
-        margin-bottom: 20px; /* Agrega espacio debajo de la imagen */
+        margin-bottom: 20px;
     }
 
     .tercera-seccion .texto {
-        padding-left: 0; /* Elimina el espaciado izquierdo */
+        padding-left: 0;
     }
 
     .tercera-seccion .texto h1 {
-        margin-top: 0; /* Asegura que no haya margen superior */
+        margin-top: 0;
     }
 
     .cuarta-seccion .imagenes {
-        display: flex; /* Activa Flexbox */
-        flex-wrap: wrap; /* Permite que las imágenes se ajusten en varias filas */
-        justify-content: center; /* Centra las imágenes horizontalmente */
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
     }
 
     .cuarta-seccion .imagenes img {
-        width: 50%; /* Cada imagen ocupa el 50% del ancho menos el espacio del gap */
-        height: auto; /* Mantiene la proporción de las imágenes */
+        width: 50%;
+        height: auto;
+    }
+
+    .quinta-seccion {
+        text-align: center;
+        padding: 20px;
+    }
+
+    .quinta-seccion h1 {
+        font-size: 40px;
+        margin: 0;
     }
 }
